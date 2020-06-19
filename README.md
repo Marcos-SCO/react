@@ -1,3 +1,1 @@
-# reactTutorials
-
-Repository to learn react with videos, courses and books - Navigate through branchs
+This project is a video tutorial from a video on youtube: https://www.youtube.com/watch?v=ufodJVcpmps
