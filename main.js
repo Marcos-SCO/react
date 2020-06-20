@@ -7,7 +7,7 @@ function MyComponent1() {
     return (
         <div className="component-1">
             <MyComponent2>
-                <MyComponent4 name={name} />
+                <MyComponent3 />
             </MyComponent2>
         </div>
     )
@@ -25,17 +25,27 @@ function MyComponent2(props) {
 }
 
 function MyComponent3() {
+    const [tel, setTel] = React.useState('1143825357');
+    setTimeout(() => {
+        setTel('944448798');
+    }, 1550)
     return (
         <div className="component-3">
-            <MyComponent4 />
+            <MyComponent4 tel={tel} />
         </div>
     )
 }
 
 function MyComponent4(props) {
+    const [age, setAge] = React.useState(22);
+    setTimeout(() => {
+        setAge(23);
+    }, 1000);
+
     return (
         <div className="component-4">
-            <p>{'4th component with prop name: ' + props.name}</p>
+            <p>Age: {age}</p>
+            <p>Tel - {props.tel}</p>
         </div>
     )
 }

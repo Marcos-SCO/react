@@ -5,9 +5,7 @@ function MyComponent1() {
   const name = 'Marcos dos Santos Carvalho';
   return /*#__PURE__*/React.createElement("div", {
     className: "component-1"
-  }, /*#__PURE__*/React.createElement(MyComponent2, null, /*#__PURE__*/React.createElement(MyComponent4, {
-    name: name
-  })));
+  }, /*#__PURE__*/React.createElement(MyComponent2, null, /*#__PURE__*/React.createElement(MyComponent3, null)));
 }
 
 function MyComponent2(props) {
@@ -17,15 +15,25 @@ function MyComponent2(props) {
 }
 
 function MyComponent3() {
+  const [tel, setTel] = React.useState('1143825357');
+  setTimeout(() => {
+    setTel('944448798');
+  }, 1550);
   return /*#__PURE__*/React.createElement("div", {
     className: "component-3"
-  }, /*#__PURE__*/React.createElement(MyComponent4, null));
+  }, /*#__PURE__*/React.createElement(MyComponent4, {
+    tel: tel
+  }));
 }
 
 function MyComponent4(props) {
+  const [age, setAge] = React.useState(22);
+  setTimeout(() => {
+    setAge(23);
+  }, 1000);
   return /*#__PURE__*/React.createElement("div", {
     className: "component-4"
-  }, /*#__PURE__*/React.createElement("p", null, '4th component with prop name: ' + props.name));
+  }, /*#__PURE__*/React.createElement("p", null, "Age: ", age), /*#__PURE__*/React.createElement("p", null, "Tel - ", props.tel));
 }
 
 function MyComponent() {
