@@ -1,0 +1,25 @@
+{
+  "name": "js_react",
+  "version": "1.0.0",
+  "description": "Component youtube tutorial from Programador a Bordo channel: https://www.youtube.com/watch?v=Ws9WVHhNq5M",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-react": "^7.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcos-SCO/reactTutorials.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcos-SCO/reactTutorials/issues"
+  },
+  "homepage": "https://github.com/Marcos-SCO/reactTutorials#readme"
+}

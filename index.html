@@ -14,77 +14,9 @@
     <!-- React cdn -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script>
-        // property propagation
-        const nameContext = React.createContext('name');
-
-        // chain of components
-        function myComponent1() {
-            const name = 'Marcos dos Santos Carvalho';
-            return (
-                React.createElement(nameContext.Provider, {
-                        value: name
-                    },
-                    React.createElement('div', {
-                            className: 'component-1'
-                        },
-                        React.createElement(myComponent2, {
-                            name: name
-                        })
-                    )
-                )
-            )
-        }
-
-        function myComponent2() {
-            return (
-                React.createElement('div', {
-                        className: 'component-2'
-                    },
-                    React.createElement(myComponent3)
-                )
-            );
-        }
-
-        function myComponent3() {
-            return (
-                React.createElement('div', {
-                        className: 'component-3'
-                    },
-                    React.createElement(myComponent4)
-                )
-            );
-        }
-
-        function myComponent4() {
-            return (
-                // consument property
-                React.createElement(nameContext.Consumer, null, (name) => (
-                    React.createElement('div', {
-                            className: 'component-4'
-                        },
-                        React.createElement('p', null, `4th component with prop name: ${name}`)
-                    )
-                ))
-            );
-        }
-
-        function myComponent() {
-            return (
-                React.createElement('div', {
-                        id: 'components'
-                    },
-                    React.createElement(myComponent1)
-                )
-            );
-        }
-        // unchain components
-        ReactDOM.render(
-            React.createElement(myComponent),
-            document.getElementById('app')
-        )
-    </script>
-
+    
+    <!-- JSX babel trasnpiled file -->
+    <script src="dist.js"></script>
 </body>
 
 </html>
