@@ -1,12 +1,11 @@
 import Menu from '../components/Menu';
-
-function HomePage() {
+function Contact() {
     return (
         <>
             <Menu />
-            <h1>Home page</h1>
+            <h1>Contato</h1>
         </>
     );
 }
 
-export default HomePage;
+export default Contact;
