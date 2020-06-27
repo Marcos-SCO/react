@@ -1,1 +1,7 @@
 npm install next react react-dom
+
+npm install --save bootstrap
+
+npm install --save reactstrap
+
+npm install --save @zeit/next-css
