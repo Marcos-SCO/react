@@ -1,3 +1,3 @@
-# reactTutorials
+# React with Next
 
-This repository is to put in practice and learn react with videos, courses and books - Navigate through branchs
+This code is part of a video tutorial from Celke's youtube channel: https://www.youtube.com/watch?v=WRFzOcPNcfY
