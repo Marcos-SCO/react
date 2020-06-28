@@ -27,13 +27,13 @@ const Menu = () => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/"><a style={linkStyle}>Home</a></NavLink>
+                            <NavLink style={linkStyle} href="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/sobre"><a style={linkStyle}>Sobre</a></NavLink>
+                            <NavLink style={linkStyle} href="/sobre">Sobre</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/contato"><a style={linkStyle}>Contato</a></NavLink>
+                            <NavLink style={linkStyle} href="/contato">Contato</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
