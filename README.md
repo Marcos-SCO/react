@@ -1,3 +1,3 @@
 # reactTutorials
 
-This repository is to put in practice and learn react with videos, courses and books - Navigate through branchs
+This code is a reprodution of the video posted on Traversy Media youtube channel: https://www.youtube.com/watch?v=YaioUnMw0mo
