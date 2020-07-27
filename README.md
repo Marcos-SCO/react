@@ -1,3 +1,8 @@
 # reactTutorials
 
-This repository is to put in practice and learn react with videos, courses and books - Navigate through branchs
+Imersão react da Alura
+
+Comandos
+
+-- Criando um projeto
+npm create-react-app aluraflix
