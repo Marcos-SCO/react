@@ -1,3 +1,3 @@
-# reactTutorials
+# React Redux integrando com PokeApi
 
-This repository is to put in practice and learn react with videos, courses and books - Navigate through branchs
+npm create-react-app
