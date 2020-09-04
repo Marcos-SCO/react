@@ -1,0 +1,11 @@
+Used dependencies
+
+Axios | Lodash | React-redux | Redux | Redux-thunk | Redux-devtolls-extension: 
+
+   npm i axios lodash react-redux redux redux-thunk redux-devtools-extension
+
+React paginate
+
+npm i react-paginate --save
+
+npm i react-router-dom
