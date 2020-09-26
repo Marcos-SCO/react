@@ -15,7 +15,9 @@ export default class Products extends Component {
                                 </a>
                                 <div className="product-price">
                                     <div>{formatCurrency(product.price)}</div>
-                                    <button className="button primary">Adicionar ao carrinho</button>
+                                    <button className="button primary"
+                                    onClick={() => this.props.addToCart(product)}
+                                    >Adicionar ao carrinho</button>
                                 </div>
                             </div>
                         </li>
