@@ -23,7 +23,7 @@ export default class View extends Component {
 
     usersList() {
         return this.state.students.map(student =>
-            <RecordsList student={student} />
+            <RecordsList student={student} key={student.id} />
         )
     }
 
