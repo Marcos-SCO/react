@@ -47,7 +47,13 @@ export default class Insert extends Component {
             email: this.state.email,
         };
 
-        axios.post(`${API_BASE}/insert.php`, obj)
+        let config = {
+            headers: {
+                'Content-type': 'application/x-www-form-urlencoded'
+            }
+        };
+
+        axios.post(`${API_BASE}/insert.php`, obj, config)
             .then(res => console.log(res.data));
 
         this.setState({
