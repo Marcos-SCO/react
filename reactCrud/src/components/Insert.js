@@ -42,7 +42,7 @@ export default class Insert extends Component {
         e.preventDefault();
 
         const obj = {
-            fist_name: this.state.first_name,
+            first_name: this.state.first_name,
             last_name: this.state.last_name,
             email: this.state.email,
         };
