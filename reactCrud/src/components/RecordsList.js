@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const API_BASE = process.env.REACT_APP_API_BASE;
 
@@ -44,7 +45,7 @@ export default class RecordsList extends Component {
                 <td>{last_name}</td>
                 <td>{email}</td>
                 <td>
-                    <button className="btn btn-primary">Edit</button>
+                    <Link to={'/edit/' + id} className="btn btn-primary">Edit</Link>
                 </td>
                 <td>
                     <button

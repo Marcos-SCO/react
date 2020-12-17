@@ -31,11 +31,11 @@ export default class View extends Component {
         return (
             <div>
                 <h3 align="center">Users List</h3>
-                <table className="table table-striped" style={{ marginTop: 20 }}>
+                <table className="table table-striped table-responsive" style={{ marginTop: 20 }}>
                     <thead>
-                        <tr>First Name</tr>
-                        <tr>Last Name</tr>
-                        <tr>Email</tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
                     </thead>
                     <tbody>
                        {this.usersList()}
