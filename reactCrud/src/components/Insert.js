@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 
 export default class Insert extends Component {
 
@@ -44,7 +45,7 @@ export default class Insert extends Component {
             email: this.state.email,
         };
 
-        console.log(obj);
+        axios.post('')
     }
 
     render() {
