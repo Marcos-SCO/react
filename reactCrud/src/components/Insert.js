@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 export default class Insert extends Component {
 
     constructor(props) {
@@ -45,10 +47,16 @@ export default class Insert extends Component {
             email: this.state.email,
         };
 
-        // axios.post('')
-        console.log(process.env);
+        axios.post(`${API_BASE}/insert.php`, obj)
+            .then(res => console.log(res.data));
+
+        this.setState({
+            first_name: '',
+            last_name: '',
+            email: '',
+        })
     }
-    
+
     render() {
         return (
             <div>
