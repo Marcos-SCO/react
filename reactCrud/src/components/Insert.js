@@ -45,9 +45,10 @@ export default class Insert extends Component {
             email: this.state.email,
         };
 
-        axios.post('')
+        // axios.post('')
+        console.log(process.env);
     }
-
+    
     render() {
         return (
             <div>
